@@ -1,10 +1,10 @@
 # 🧠 Estudo da Evolução das Arquiteturas de CNN e Vision Transformers em Raio-X de Tórax
 
-Este repositório é um **projeto didático completo voltado para salas de aula, laboratórios acadêmicos e pesquisadores**, dedicado ao estudo prático e teórico da evolução histórica da Visão Computacional aplicada à **classificação binária de exames médicos de Raio-X de Tórax**.
+Este repositório é um projeto dedicado ao estudo prático e teórico da evolução histórica da Visão Computacional aplicada à **classificação binária de exames médicos de Raio-X de Tórax**.
 
 ---
 
-## 📚 Documentação Didática por Modelo (`docs/`)
+## 📚 Documentação por Modelo (`docs/`)
 
 Em vez de concentrar todos os detalhes teóricos em um único arquivo, criamos uma pasta [`docs/`](docs/). Cada modelo possui um documento dedicado com contexto histórico, fórmulas matemáticas, rastreamento de tensores (*tensor shapes*), referências diretas ao código-fonte em [`models/`](models/) e considerações clínicas:
 
@@ -76,11 +76,11 @@ estudando_cnns/
 
 ---
 
-## 🛠️ Como Usar no Código
+## 🛠️ Como Usar o Código
 
-O projeto foi refatorado para permitir que os alunos e pesquisadores escolham entre **duas formas de instanciar os modelos**:
+O projeto foi refatorado para permitir escolher entre **duas formas de instanciar os modelos**:
 
-### Opção 1: Importação Direta da Classe do Arquivo (Modo Sala de Aula)
+### Opção 1: Importação Direta da Classe do Arquivo (Modo Didatico)
 Ideal para inspecionar parâmetros, imprimir `print(model)` e testar tensores:
 
 ```python
@@ -90,7 +90,7 @@ from models.resnet import ResNet18
 from models.densenet import DenseNet121
 from models.convnext import ConvNeXt
 
-# Instancia a classe escrita artesanalmente em PyTorch puro:
+# Instancia a classe escrita em PyTorch puro:
 model = ResNet18(num_classes=1, in_channels=3)
 
 # Teste com um lote fictício de 2 radiografias [Batch, Canais, Altura, Largura]
